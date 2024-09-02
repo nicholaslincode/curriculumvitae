@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+}
+
+body {
+    max-width: 800 px;
+    font-family: "Lora", serif;
+    margin: 50px 100px;
+    background-color: #fffefa;
+    color: #111;
+    line-height: 1.5;
+}
+
+a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #bf341b;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #bf341b;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 10px 0px;
+}
+
+#updated {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin: 40px 0px 10px 0px;
+}
+
+h2::before {
+    content: ">> ";
+}
+
+#publications-list {
+    margin-left: 50px;
+}
+
+h4 {
+    font-size: 18px;
+    margin: 15px 0px;
+}
+
+.title {
+    font-weight: 800;
+    margin: 10px 0px;
+}
+
+#publications-list > ol > li {
+    margin-bottom: 20px;
+}
+
+#publications-list > ol > li > .author-list,
+#publications-list > ol > li > .journal,
+#publications-list > ol > li > a {
+    margin-left: 25px;
+}
+
+#publications-list > ol > li > .author-list::before {
+    content: "Authors: ";
+    font-style: normal;
+    font-weight: 400;
+    color: #111;
+}
+
+#publications-list > ol > li > .journal::before {
+    content: "Journal: ";
+    font-style: normal;
+    font-weight: 400;
+    color: #111;
+
+}
+
+#publications-list > ol > li > a::before {
+    content: "DOI: ";
+    font-style: normal;
+    font-weight: 400;
+    color: #111;
+}
+
+
+.n-lin {
+    font-weight: 800;
+    text-decoration: underline 2px;
+}
+
+.journal {
+    font-style: italic;
+    font-weight: 800;
+}
+
+#full-publications {
+    margin: 25px 0px;
+    font-weight: 800;
+}
