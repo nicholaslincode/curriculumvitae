@@ -9,6 +9,8 @@ body {
     background-color: #fffefa;
     color: #111;
     line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 a {
@@ -17,13 +19,23 @@ a {
 }
 
 a:hover {
-    color: #bf341b;
-    text-decoration: none;
+    color: #FF69B4;
+    text-decoration: underline;
+    text-decoration-style: double;
+    font-weight: 800;
 }
 
-a:visited {
-    color: #bf341b;
-    text-decoration: none;
+#profile-links {
+    text-align: right;
+    font-size: 16px;
+}
+
+#profile-links a::before {
+    content: "〈";
+}
+
+#profile-links a::after {
+    content: "〉";
 }
 
 h1 {
@@ -43,10 +55,6 @@ h2::before {
     content: ">> ";
 }
 
-#publications-list {
-    margin-left: 50px;
-}
-
 h4 {
     font-size: 18px;
     margin: 15px 0px;
@@ -57,8 +65,35 @@ h4 {
     margin: 10px 0px;
 }
 
+.academic-position-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.academic-position p, .academic-position ul {
+    margin-left: 25px;
+}
+
+.academic-position-other {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.academic-position ul {
+    font-size: 14px;
+}
+
+
+
 #publications-list > ol > li {
     margin-bottom: 20px;
+}
+
+#publications-list {
+    margin-left: 50px;
 }
 
 #publications-list > ol > li > .author-list,
