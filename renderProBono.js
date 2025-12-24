@@ -1,4 +1,4 @@
-import { proBonoData } from './proBonoData.js';
+import { proBonoData } from './proBonoDataEngagements.js';
 
 const container = document.getElementById('probono');
 
