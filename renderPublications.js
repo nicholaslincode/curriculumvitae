@@ -20,7 +20,7 @@ publicationsData
     meta.className = "meta";
     meta.innerHTML = `
       <span class="journal">${pub.journal}</span>, ${pub.year}
-      ${pub.doi ? ` · <a href="${pub.doi}" target="_blank">${pub.doi}</a>` : ""}
+      ${pub.doi ? ` | <a href="${pub.doi}" target="_blank">${pub.doi}</a>` : ""}
     `;
 
     div.appendChild(title);
@@ -30,7 +30,7 @@ publicationsData
      if (pub.equalFirstAuthors) {
       const note = document.createElement("div");
       note.className = "equal-note";
-      note.textContent = "† Equal first authors";
+      note.textContent = "* Equal first authors";
       div.appendChild(note);
     }
 
@@ -50,7 +50,7 @@ function formatAuthors(pub) {
     .map(author => {
       // Bold equal first authors with †
       if (pub.equalFirstAuthors?.includes(author)) {
-        return `<strong>${author}†</strong>`;
+        return `<strong>${author}</strong>*`;
       }
 
       // Bold your name if not already in equal first authors

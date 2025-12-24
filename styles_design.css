@@ -1,0 +1,21 @@
+* {
+    background: #e4ddf3;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.small-text {
+    font-size: 0.75em;
+}
+
+body {
+    font-family: "Bodoni Moda", serif;
+    line-height: 1.5;
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}

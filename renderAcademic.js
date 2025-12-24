@@ -14,7 +14,7 @@ academicData.forEach(a => {
                             
                             <div class="department">${a.department}</div>
                         </div>
-                        <div class="research">${a.research}</div>
+                        <div class="research"><p>Research: ${a.research}.</p></div>
                     </div>`;
   container.appendChild(div);
 });

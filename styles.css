@@ -1,9 +1,16 @@
-/* ***** HEADER ***** */
+* {
+    background: #FFFFFE;
+}
 
+/* ***** HEADER ***** */
 h1 {
-    font-size: larger;
+    font-size: 2em;
     margin-bottom: 2rem;
     text-align: center;
+}
+
+.small-text {
+    font-size: 0.75em;
 }
 
 ul {
@@ -20,10 +27,14 @@ ul {
     text-align: center;
 }
 
+p {
+    margin: 0;
+}
+
 /* ***** BODY ***** */
 
 body {
-    font-family: "Noto Sans", sans-serif;;
+    font-family: "Noto Sans", sans-serif;
     line-height: 1.5;
     max-width: 1000px;
     margin: 4rem auto;
@@ -56,6 +67,26 @@ h2 {
 
 .academic-experience .academic-position-department {
     display: flex;
+}
+
+.probono-engagement {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 0.5em;
+}
+
+.probono-engagement .period {
+    width: 120px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.probono-engagement .detail {
+    flex-grow: 1;
+}
+
+.italics-text {
+    font-style: italic;
 }
 
 .other-experience {
@@ -137,6 +168,10 @@ h2 {
     font-weight: bold;
     margin-bottom: 0.25rem;
 
+}
+
+.presentation-organization {
+    font-style: italic;
 }
 
 /* ***** FOOTER ***** */

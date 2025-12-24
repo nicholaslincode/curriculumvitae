@@ -10,7 +10,7 @@ presentationsData.forEach(a => {
                     <div class="detail">
                         <div class="presentation-title">${a.title}</div>
                         <div class="presentation-contributors">${a.contributors}</div>
-                        <div class="presentation-organization-location">${a.organization} | ${a.type}</div>
+                        <div class="presentation-organization-type"><span class="presentation-organization">${a.organization}</span> | ${a.type}</div>
                         <div class="presentation-location">${a.location}</div>
                     </div>`;
   container.appendChild(div);
