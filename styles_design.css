@@ -13,9 +13,71 @@ h1 {
 }
 
 body {
-    font-family: "Bodoni Moda", serif;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 800;
     line-height: 1.5;
-    max-width: 1000px;
+    max-width: 100%;
     margin: 4rem auto;
     padding: 0 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    margin: 4em 0em 1em 0em;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+}
+
+.preview {
+    width: 200px;
+    margin: 0px auto;
+    border: 0.25px solid #000000;
+}
+
+#badge {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: rgb(142, 164, 222);
+    bottom: 55px;
+    right: 55px;
+    line-height: 1;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#badge:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+
+.rotating-element {
+    animation: spin-animation 5s linear infinite; 
+}
+
+@keyframes spin-animation {
+  from {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* End at 360 degrees (a full circle) */
+  }
 }
