@@ -10,9 +10,9 @@ academicData.forEach(a => {
                     <div class="detail">
                         <div class="institution">${a.institution}</div>
                         <div class="academic-position-department">
-                            <div class="academic-position">${a.position}<span> | <span></div>
+                            <span class="academic-position">${a.position} | </span>
                             
-                            <div class="department">${a.department}</div>
+                            <span class="department">${a.department}</span>
                         </div>
                         <div class="research"><p>Research: ${a.research}.</p></div>
                     </div>`;

@@ -1,55 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <title>Nicholas Lin</title>
-    </head>
-    <body>
-        <header>
-            <h1>Nicholas Lin<span class="small-text">, Ph.D.</span></h1>
-            <div class="socials">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/linnicholas/" target="_blank">LinkedIn</a></li>
-                <li><a href="mailto:nicholas.lin@mail.mcgill.ca">Email</a></li>
-                <li><a href="https://scholar.google.ca/citations?user=VPL0iGMAAAAJ&hl=en" target="_blank">Scholar</a></li>
-            </ul>
-            </div>
-            <p id="summary">
-                Biotechnologist working across science, engineering, and design to produce scalable biofabrication workflows and engineered living materials.
-            </p>
-        </header>
-        <main>
-            <h2>Academic Experience:</h2>
-            <div id="academic"></div>
-            <script type="module" src="renderAcademic.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nicholas Lin</title>
+  </head>
+  <body>
+    <div id="cv-container">
+      <header>
+        <h1>Nicholas Lin<span class="small-text">, Ph.D.</span></h1>
+        <div class="socials">
+          <ul>
+            <li id="linkedin">
+              <a href="https://www.linkedin.com/in/linnicholas/" target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li id="email" class="tooltip">
+              <a href="mailto:nicholas.lin@mail.mcgill.ca">Email</a
+              ><span class="tooltiptext">nicholas.lin@mail.mcgill.ca</span>
+            </li>
+            <li id="scholar">
+              <a
+                href="https://scholar.google.ca/citations?user=VPL0iGMAAAAJ&hl=en"
+                target="_blank"
+                >Scholar</a
+              >
+            </li>
+          </ul>
+        </div>
+        <p id="summary">
+          Biotechnologist working across science, engineering, and design to
+          produce scalable biofabrication workflows and engineered living
+          materials.
+        </p>
+      </header>
+      <main>
+        <h2>Academic Experience:</h2>
+        <div id="academic"></div>
+        <script type="module" src="renderAcademic.js"></script>
 
-            <h2>Other Experience:</h2>
-            <div id="other"></div>
-            <script type="module" src="renderOtherExperiences.js"></script>
+        <h2>Other Experience:</h2>
+        <div id="other"></div>
+        <script type="module" src="renderOtherExperiences.js"></script>
 
-            <h2><span class="italics-text">Pro Bono</span> Engagements:</h2>
-            <div id="probono"></div>
-            <script type="module" src="renderProBono.js"></script>
+        <h2><span class="italics-text">Pro Bono</span> Engagements:</h2>
+        <div id="probono"></div>
+        <script type="module" src="renderProBono.js"></script>
 
-            <h2>Achievements:</h2>
-            <div id="achievements"></div>
-            <script type="module" src="renderAchievements.js"></script>
+        <h2>Achievements:</h2>
+        <div id="achievements"></div>
+        <script type="module" src="renderAchievements.js"></script>
 
-            <h2>Peer-Reviewed Publications:</h2>
-            <div id="publications"></div>
-            <script type="module" src="renderPublications.js"></script>
+        <h2>Peer-Reviewed Publications:</h2>
+        <div id="publications"></div>
+        <script type="module" src="renderPublications.js"></script>
 
-            <h2>Select Presentations:</h2>
-            <div id="presentations"></div>
-            <script type="module" src="renderPresentations.js"></script>
-        </main>
-        <footer>
-            <p>© 2026 Nicholas Lin</p>
-        </footer>
-    </body>
+        <h2>Select Presentations:</h2>
+        <div id="presentations"></div>
+        <script type="module" src="renderPresentations.js"></script>
+      </main>
+      <footer>
+        <p>© 2026 Nicholas Lin</p>
+      </footer>
+      <div id="light-dark-mode">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/978400ff3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+      }
+      document
+        .getElementById("light-dark-mode")
+        .addEventListener("click", toggleDarkMode);
+    </script>
+  </body>
 </html>

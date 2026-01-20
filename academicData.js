@@ -24,8 +24,8 @@ export const academicData = [
     {
         period: "2011 - 2016",
         institution: "McGill University",
-        position: "B.Eng. (with Biotechnology Minor)",
-        department: "Chemical Engineering",
+        position: "B.Eng.",
+        department: "Chemical Engineering (with Biotechnology Minor)",
         research: `Toxicity of silver nanoparticles against microorganisms`
     }
 ]
