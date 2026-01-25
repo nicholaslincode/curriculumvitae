@@ -47,7 +47,8 @@ h1 {
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -67,6 +68,7 @@ h1 {
   position: absolute;
   top: 100%;
   z-index: 1;
+  font-size: 1rem;
 }
 
 .tooltip:hover .tooltiptext {
@@ -118,7 +120,7 @@ h2 {
 
 .academic-experience .period {
   width: 8rem;
-  font-weight: bold;
+  font-weight: 400;
   flex-shrink: 0;
 }
 
@@ -142,7 +144,7 @@ h2 {
 
 .probono-engagement .period {
   width: 8rem;
-  font-weight: bold;
+  font-weight: 400;
   flex-shrink: 0;
 }
 
@@ -162,7 +164,7 @@ h2 {
 
 .other-experience .period {
   width: 8rem;
-  font-weight: bold;
+  font-weight: 400;
   flex-shrink: 0;
 }
 
@@ -178,7 +180,7 @@ h2 {
 
 .achievement .year {
   width: 5rem;
-  font-weight: bold;
+  font-weight: 400;
   flex-shrink: 0;
 }
 
@@ -217,7 +219,7 @@ h2 {
 
 .presentation .period {
   width: 5rem;
-  font-weight: bold;
+  font-weight: 400;
   flex-shrink: 0;
 }
 
@@ -255,8 +257,8 @@ footer {
 
 #light-dark-mode {
   position: fixed;
-  top: 5rem;
-  left: 5rem;
+  top: 7.5%;
+  left: 5%;
   width: 3rem;
   height: 3rem;
   background-color: var(--bg-color);
@@ -267,6 +269,6 @@ footer {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
+  box-shadow: 0 0 5px rgba(0, 0, 0.3, 0.3);
+  z-index: 100;
 }
